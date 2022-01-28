@@ -3,12 +3,12 @@
   padding-bottom: 25px;
 }
 
-.header-conect {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-items:not(:last-child) {
+.site-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -29,12 +29,12 @@
   color: #2196F3;
 }
 
-.studio {
+.header__studio {
   font-family: Raleway, sans-serif;
   color: black;
 }
 
-.menu {
+.site-list {
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -62,11 +62,11 @@
   color: #2196F3;
 }
 
-.rat {
+.site-nav {
   position: relative;
 }
 
-.rat::after {
+.site-nav::after {
   content: "";
   display: block;
   background-color: #2196F3;
@@ -78,7 +78,7 @@
   margin-top: 28px;
 }
 
-.ashe::after {
+.site-nav-button::after {
   content: "";
   display: block;
   background-color: #2196F3;
@@ -117,18 +117,18 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.conect {
+.site-contacts {
   display: flex;
   margin-left: 290px;
 }
 
-.new-conect {
+.contacts-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mail {
+.contacts-mail {
   height: 16px;
   display: flex;
   align-items: center;
@@ -143,22 +143,22 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail:focus, .mail:hover {
+.contacts-mail:focus, .contacts-mail:hover {
   color: #2196F3;
   fill: #2196F3;
 }
 
-.conect-mail {
+.conect-mail-icon {
   margin-right: 10px;
   transition: fill 250ms;
 }
 
-.conect-phone {
+.conect-phone-icon {
   margin-right: 10px;
   transition: fill 250ms;
 }
 
-.phone {
+.contacts-phone {
   height: 16px;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone:hover, .phone:focus {
+.contacts-phone:hover, .contacts-phone:focus {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -195,7 +195,7 @@
   justify-content: center;
 }
 
-.for-h1 {
+.efect-title {
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ body {
   list-style: none;
 }
 
-.items {
+.slogans {
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -268,13 +268,13 @@ body {
   padding-top: 94px;
 }
 
-.our-section-list {
+.our-sence-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.our-list-item {
+.our-list__item {
   display: block;
   width: 270px;
   height: 120px;
@@ -283,16 +283,20 @@ body {
   padding: 25px 100px;
 }
 
-.our-list-item + .our-list-item {
+.our-list__item + .our-list__item {
   margin-left: 30px;
 }
 
-.evocation {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.slogans__item {
+  width: 270px;
+  list-style-type: none;
 }
 
-.names {
+.slogans__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.slogans__item-text {
   width: 270px;
   color: var(--main-color);
   font-weight: bold;
@@ -303,27 +307,23 @@ body {
   margin-top: 30px;
 }
 
-.block {
-  width: 270px;
-  list-style-type: none;
+.evocation {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.block:not(:last-child) {
-  margin-right: 30px;
-}
-
-.images {
+.evocation-images {
   display: flex;
   justify-content: center;
   list-style-type: none;
   position: relative;
 }
 
-.image-item:not(:last-child) {
+.evocation-images__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.evocation-picture {
+.evocation-inscription {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +335,7 @@ body {
   bottom: 3px;
 }
 
-.evocation-picture-text {
+.evocation-inscription-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -345,7 +345,7 @@ body {
   color: #FFFFFF;
 }
 
-.images-team {
+.dream-team-list {
   display: flex;
   list-style-type: none;
 }
@@ -406,7 +406,7 @@ body {
   fill: #FFFFFF;
 }
 
-.full-name {
+.team-mambers-title {
   text-align: center;
   font-weight: var(--main-font-weight);
   font-size: 16px;
@@ -415,7 +415,7 @@ body {
   color: var(--main-color);
 }
 
-.position {
+.team-mambers-pretitle {
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -436,7 +436,7 @@ body {
   justify-content: center;
 }
 
-.customers-list-item + .customers-list-item {
+.customers-list__item + .customers-list__item {
   margin-left: 30px;
 }
 
@@ -466,7 +466,7 @@ footer {
   padding-bottom: 60px;
 }
 
-.address-flex {
+.address-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -523,13 +523,13 @@ footer {
   margin-top: 9px;
 }
 
-.footer-cont {
+.footer-united {
   display: block;
   margin-top: 11px;
   margin-left: 70px;
 }
 
-.united {
+.footer-united-title {
   font-family: inherit;
   font-weight: bold;
   font-size: 14px;
@@ -550,7 +550,7 @@ footer {
   height: 44px;
 }
 
-.footer-list-item + .footer-list-item {
+.footer-list__item + .footer-list__item {
   margin-left: 10px;
 }
 
@@ -571,13 +571,13 @@ footer {
   background-color: #2196F3;
 }
 
-.map {
+.container-footer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.mouse {
+.container-footer__logo {
   display: block;
 }
 
@@ -592,7 +592,7 @@ footer {
   color: #FFFFFF;
 }
 
-.submit-link {
+.submit-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,15 +742,15 @@ footer {
   margin-bottom: 50px;
 }
 
-.button-item {
+.button-list__item {
   background-color: #F5F4FA;
 }
 
-.button-item:not(:last-child) {
+.button-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.images-box {
+.images-box-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -792,7 +792,7 @@ footer {
   margin: 0 auto;
 }
 
-.p-style {
+.slogans-title {
   width: 270px;
   color: var(--second-color);
   font-family: inherit;
@@ -801,7 +801,7 @@ footer {
   line-height: 1.71;
 }
 
-.h2-style {
+.regular-customers-title {
   color: var(--main-color);
   font-weight: bold;
   font-size: 36px;
@@ -834,7 +834,7 @@ footer {
   color: #FFFFFF;
 }
 
-.for-h2 {
+.box-names-title {
   width: 322px;
   font-weight: bold;
   font-size: 18px;
@@ -844,7 +844,7 @@ footer {
   text-transform: none;
 }
 
-.for-p {
+.box-names-pretitle {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

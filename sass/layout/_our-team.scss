@@ -1,4 +1,4 @@
-.items {
+.slogans {
     @include align-list;
     list-style-type: none;
 }
@@ -7,12 +7,12 @@
     padding-top: 94px;
 }
 
-.our-section-list {
+.our-sence-list {
     @include align-list;
     justify-content: center;
 }
 
-.our-list-item {
+.our-list__item {
     display: block;
     width: 270px;
     height: 120px;
@@ -21,6 +21,25 @@
     padding: 25px 100px;
 }
 
-.our-list-item+.our-list-item {
+.our-list__item+.our-list__item {
     margin-left: 30px;
+}
+
+.slogans__item {
+    width: 270px;
+    list-style-type: none;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.slogans__item-text {
+    width: 270px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
