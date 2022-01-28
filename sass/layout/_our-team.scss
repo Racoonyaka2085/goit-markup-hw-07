@@ -1,0 +1,26 @@
+.items {
+    @include align-list;
+    list-style-type: none;
+}
+
+.our-sence {
+    padding-top: 94px;
+}
+
+.our-section-list {
+    @include align-list;
+    justify-content: center;
+}
+
+.our-list-item {
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 100px;
+}
+
+.our-list-item+.our-list-item {
+    margin-left: 30px;
+}

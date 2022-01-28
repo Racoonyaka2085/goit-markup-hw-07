@@ -1,3 +1,23 @@
-body {
-    background-color: red;
-}
+@import './layout/header';
+@import './layout/efect';
+@import './utils/mixin';
+@import './utils/vars';
+@import './utils/reset';
+@import './base/common';
+@import './layout/our-team';
+@import './layout/evocation';
+@import './layout/dream-team';
+@import './layout/regular-customers';
+@import './layout/footer';
+@import './layout/header-portfolio';
+@import './layout/button-menu';
+@import './layout/box-with-image';
+// ------------------------------------------------components------------
+@import './components/container';
+@import './components/p-style';
+@import './components/h2-style';
+@import './components/buttons';
+@import './components/for-h2';
+@import './components/for-p';
+@import './components/images-box-text';
+@import './components/modal';
