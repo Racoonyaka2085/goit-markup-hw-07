@@ -64,18 +64,17 @@
 
 .site-nav {
     position: relative;
-}
-
-.site-nav::after {
-    content: "";
-    display: block;
-    background-color: #2196F3;
-    border-radius: 2px;
-    width: 48px;
-    height: 4px;
-    position: absolute;
-    z-index: 1;
-    margin-top: 28px;
+    &::after {
+        content: "";
+        display: block;
+        background-color: #2196F3;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 28px;
+    }
 }
 
 .site-nav-button::after {

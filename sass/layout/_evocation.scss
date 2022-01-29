@@ -1,17 +1,15 @@
 .evocation {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.evocation-images {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    position: relative;
-}
-
-.evocation-images__item:not(:last-child) {
-    margin-right: 30px;
+    &-images {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        position: relative;
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .evocation-inscription {

@@ -1,12 +1,11 @@
-.dream-team-list {
-    display: flex;
-    list-style-type: none;
-}
-
 .dream-team {
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
+    &-list {
+        display: flex;
+        list-style-type: none;
+    }
 }
 
 .team {
@@ -23,13 +22,12 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-}
-
-.team-list-item {
-    width: 44px;
-    height: 44px;
-    &+.team-list-item {
-        margin-left: 10px;
+    &-list-item {
+        width: 44px;
+        height: 44px;
+        &+.team-list-item {
+            margin-left: 10px;
+        }
     }
 }
 

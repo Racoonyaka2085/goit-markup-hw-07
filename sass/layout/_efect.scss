@@ -8,21 +8,20 @@
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
+    &-title {
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        margin-bottom: 40px
+    }
 }
 
 .container-efect {
     display: flex;
     justify-content: center;
-}
-
-.efect-title {
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 40px
 }
 
 .order {
